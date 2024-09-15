@@ -1,0 +1,160 @@
+Variable Name,Type,Meaning
+target,binary, = 1 if consumer unit is ranked >= 40th and <= 60th percentile in terms of income
+medsuppq,continuous,expenditure on medical supplies
+fdhomepq,continuous,expenditure on food at home
+chldrnpq,continuous,expenditure on clothing for children under 2
+age2,continuous,age of spouse
+ttotalp,continuous,total of all trip expenditures
+footwrpq,continuous,expenditure on footwear
+othentpq,continuous,expenditure on other entertainment
+utilpq,continuous,"expenditure on utilities, fuels and public services (note: features on natural gas, electricity, oil fuels and other, other fuels, telephone and water excluded)"
+lifinspq,continuous,expenditure on life and other personal insurance
+as_comp5,count,number of members under age 2 in consumer unit
+fdawaypq,continuous,expenditure on food away from home
+as_comp4,count,number of females age 2 to 15 in consumer unit
+alcbevpq,continuous,expenditure on alcoholic beverages
+boyfifpq,continuous,"expenditure on clothing boys, 2 to 15"
+bedroomq,count,no. of complete bedrooms
+gasmopq,continuous,expenditure on gasoline and motor oil
+othaplpq,continuous,expenditure on other apparel products and services
+perscapq,continuous,expenditure on personal care
+perslt18,count,no. of children less than 18 in consumer unit
+feeadmpq,continuous,expenditure on fees and admissions
+otheqppq,continuous,expenditure on other equipments
+womsixpq,continuous,"expenditure on clothing for women, 16 and over"
+fdxmappq,continuous,expenditure on food away excluding meals as pay
+tobaccpq,continuous,expenditure on tobacco and smoking supplies
+pettoypq,continuous,"expenditure on pets, toys, and playground equipment"
+hh_cu_q,count,consumer units in household
+dmsxccpq,continuous,expenditure on domestic services excluding child care
+as_comp1,count,number of males age 16 and over in consumer unit
+cashcopq,continuous,expenditure on cash contributions
+trnothpq,continuous,"expenditure on local public transportation, excluding on trips"
+mensixpq,continuous,"expenditure on clothing men, 16 and over"
+readpq,continuous,expenditure on reading
+as_comp2,count,number of females age 16 and over in consumer unit
+as_comp3,count,number of males age 2 to 15 in consumer unit
+medsrvpq,continuous,expenditure on medical services
+predrgpq,continuous,expenditure on prescription drugs
+educapq,continuous,expenditure on education
+mainrppq,continuous,expenditure on maintenance and repairs
+bbydaypq,continuous,expenditure on babysitting and child care
+age_ref,continuous,age of reference person
+grlfifpq,continuous,"expenditure on clothing for girls, 2 to 15"
+hlthinpq,continuous,expenditure on health insurance
+miscpq,continuous,miscellaneous expenditures
+trntrppq,continuous,expenditure on public and other transportation on trips
+persot64,count,no. of persons over 64 in consumer unit
+vehinspq,continuous,expenditure on vehicle insurance
+fam_size,count,number of members in consumer unit
+vehql,count,"no. of leased autos, trucks vans"
+bathrmq,count,no. of complete bathrooms
+roomsq,continuous,square meters
+vehq,count,no. of owned vehicles
+vrntlopq,continuous,"expenditure on vehicle rental, leases, licences, and other charges"
+fdmappq,continuous,expenditure on meals as pay
+othhexpq,continuous,other household expenses
+tvrdiopq,continuous,"expenditure on televisions, radios, and sound equipments"
+state_1.0,binary, = 1 if in state 1
+state_2.0,binary, = 1 if in state 2
+state_4.0,binary, = 1 if in state 3
+state_6.0,binary, = 1 if in state 4
+state_8.0,binary, = 1 if in state 5
+state_9.0,binary, = 1 if in state 6
+state_10.0,binary, = 1 if in state 7
+state_11.0,binary, = 1 if in state 8
+state_12.0,binary, = 1 if in state 9
+state_13.0,binary, = 1 if in state 10
+state_15.0,binary, = 1 if in state 11
+state_16.0,binary, = 1 if in state 12
+state_17.0,binary, = 1 if in state 13
+state_18.0,binary, = 1 if in state 14
+state_20.0,binary, = 1 if in state 15
+state_21.0,binary, = 1 if in state 16
+state_22.0,binary, = 1 if in state 17
+state_23.0,binary, = 1 if in state 18
+state_24.0,binary, = 1 if in state 19
+state_25.0,binary, = 1 if in state 20
+state_26.0,binary, = 1 if in state 21
+state_27.0,binary, = 1 if in state 22
+state_29.0,binary, = 1 if in state 23
+state_31.0,binary, = 1 if in state 24
+state_32.0,binary, = 1 if in state 25
+state_33.0,binary, = 1 if in state 26
+state_34.0,binary, = 1 if in state 27
+state_36.0,binary, = 1 if in state 28
+state_39.0,binary, = 1 if in state 29
+state_41.0,binary, = 1 if in state 30
+state_42.0,binary, = 1 if in state 31
+state_45.0,binary, = 1 if in state 32
+state_47.0,binary, = 1 if in state 33
+state_48.0,binary, = 1 if in state 34
+state_49.0,binary, = 1 if in state 35
+state_51.0,binary, = 1 if in state 36
+state_53.0,binary, = 1 if in state 37
+state_54.0,binary, = 1 if in state 38
+state_55.0,binary, = 1 if in state 39
+building_2,binary, = 1 if building is row or townhouse inner unit
+building_3,binary, = 1 if building is end row or end townhouse (one common wall)
+building_4,binary, = 1 if building is duplex
+building_5,binary, = 1 if building 3-plex or 4-plex
+building_6,binary, = 1 if building is garden
+building_7,binary, = 1 if building is high-rise
+building_8,binary, = 1 if building is apartment or flat
+building_9,binary, = 1 if building is mobile home or trailer
+building_10,binary, = 1 if building is college dormitory
+building_11,binary, = 1 if building is other
+cutenure_2,binary, = 1 if house is owned without mortgage
+cutenure_4,binary, = 1 if house is rented
+cutenure_5,binary, = 1 if house is occupied without payment
+cutenure_6,binary, = 1 if house is student housing
+fam_type_2,binary," = 1 if married couple, own children only, oldest child < 6y"
+fam_type_3,binary," = 1 if married couple, own children only, oldest child 6 to 17y"
+fam_type_4,binary," = 1 if married couple, own children only, oldest child > 17y"
+fam_type_5,binary, = 1 if all other married couple
+fam_type_6,binary," = 1 if one parent, male,  own children, at least one child < 18y"
+fam_type_7,binary," = 1 if one parent, female,  own children, at least one child < 18y"
+fam_type_8,binary, = 1 if single consumers
+fam_type_9,binary, = 1 if other consumer units
+popsize_2.0,binary, = 1 if population size (in sampling unit) is 1.20 - 4 million
+popsize_3.0,binary, = 1 if population size (in sampling unit) is 0.33 - 1.19 million
+popsize_4.0,binary, = 1 if population size (in sampling unit) is 125 - 329.9 k
+popsize_5.0,binary, = 1 if population size (in sampling unit) is less than 125 k
+region_2.0,binary, = 1 if region is midwest
+region_3.0,binary, = 1 if region is south
+region_4.0,binary, = 1 if region is west
+metropolitan,binary, = 1 if Iiving in metropolitan area
+childage_1,binary, = 1 if all children less than 6
+childage_2,binary, = 1 if oldest child between 6 - 11 and at least one child < 6
+childage_3,binary, = 1 if all children between 6 – 11
+childage_4,binary, = 1 if oldest child between 12 - 17 and at least one child < 12
+childage_5,binary, = 1 if all children between 12 – 17
+childage_6,binary, = 1 if oldest child > 17 and at least one child < 17
+childage_7,binary, = 1 if all children > 17
+educ_ref_10,binary, = 1 if reference person attended first through eighth grade
+educ_ref_11,binary, = 1 if reference person attended ninth through twelfth grade (no HS diploma)
+educ_ref_12,binary, = 1 if reference person is high school graduate
+educ_ref_13,binary," = 1 if reference person attended some college, less than college graduate"
+educ_ref_14,binary, = 1 if reference person has Associate’s degree (occupational/vocational or academic)
+educ_ref_15,binary, = 1 if reference person has Bachelor’s degree
+educ_ref_16,binary," = 1 if reference person has Master’s degree, (professional/Doctorate degree)"
+educa2_10.0,binary, = 1 if spouse attended first through eighth grade
+educa2_11.0,binary, = 1 if spouse attended ninth through twelfth grade (no HS diploma)
+educa2_12.0,binary, = 1 if spouse is high school graduate
+educa2_13.0,binary," = 1 if spouse attended some college, less than college graduate"
+educa2_14.0,binary, = 1 if spouse has Associate’s degree (occupational/vocational or academic)
+educa2_15.0,binary, = 1 if spouse has Bachelor’s degree
+educa2_16.0,binary," = 1 if spouse has Master’s degree, (professional/Doctorate degree)"
+marital1_2,binary, = 1 if reference person is widowed
+marital1_3,binary, = 1 if reference person is divorced
+marital1_4,binary, = 1 if reference person is separated
+marital1_5,binary, = 1 if reference person was never married
+high_edu_10,binary, = 1 if highest level of education in consumer unit is
+high_edu_11,binary, = 1 if highest level of education in consumer unit is
+high_edu_12,binary, = 1 if highest level of education in consumer unit is
+high_edu_13,binary, = 1 if highest level of education in consumer unit is
+high_edu_14,binary, = 1 if highest level of education in consumer unit is
+high_edu_15,binary, = 1 if highest level of education in consumer unit is
+high_edu_16,binary, = 1 if highest level of education in consumer unit is
+urban,binary, = 1 if living in urban area
+male_ref,binary, = 1 if reference person is else
