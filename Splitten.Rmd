@@ -10,6 +10,7 @@ library(readr)
 ```
 
 ```{r cars}
+# Laden van de data. In train_data moet alleen train.csv zitten.
 train_data <- read.csv("/Users/whgrefhorst/Documents/Econometrie/Master/Machine Learning/train.csv")
 target<-train_data$target
 predictors<-train_data[,2:ncol(train_data)]
@@ -20,12 +21,14 @@ predictors<-train_data[,2:ncol(train_data)]
 set.seed(123) # For reproducibility
 k= 10 # Number of folds (dit kan je aanpassen!)
 n= nrow(train_data) #total amount of data
-fraction_validation=0.2
+
+fraction_test=0.2
 fraction_training=0.8
 rows_to_keep <- floor(fraction_training*nrow(train_data))
 train_data<-train_data[(1:rows_to_keep),]
 
 n=rows_to_keep
+
 # Split into 10 equal parts
 shuffled_indices <- sample(1:n)
 split_size <- floor(n / 10)
@@ -47,18 +50,18 @@ i=1
 for (i in 1:k){
   print(paste0("fold: ",i,"/",k))
   # Create a training and validation set
-  test_indices <- split_data[[i]]
+  validation_indices <- split_data[[i]]
   train_indices <- split_data[-i]
   
   # Makes it easier to use the training data afterwards, the validation data is already a data frame
   train_indices <- do.call(rbind, train_indices)
   
-  print(nrow(test_indices))
+  print(nrow(validation_indices))
   print(nrow(train_indices))
   #Doe hier wat je wil
 
 }
-
+#Hier heb je dan nog de test set, die is 0.2*
 print("finished")
 ```
 
