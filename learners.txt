@@ -1,0 +1,10 @@
+learners <-
+  c("mlr3::lrn('ranger')",
+    "mlr3::lrn('cv_glmnet', alpha = 0.5)",
+    "mlr3::lrn('svm')",
+    "mlr3::lrn('xgboost', nrounds = 1000)")
+
+random forest
+elastic net
+support vector machine
+xgboost
