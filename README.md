@@ -15,4 +15,4 @@ For example, to install PyTorch with CUDA 11.8, you can use the following comman
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-You can replace cu118 with the appropriate CUDA version for your system (e.g., cu117, cu116). If CUDA is not available, PyTorch will fall back to the CPU version (which is honestly fine for this simple of an assignment lol).
+You can replace cu118 with the appropriate CUDA version for your system (e.g., cu117, cu116). If CUDA is not available, PyTorch will fall back to the CPU version (which is honestly fine for this assignment).

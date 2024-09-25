@@ -2,7 +2,10 @@ numpy
 pandas
 matplotlib
 seaborn
+logging
+time
+joblib
 scikit-learn
 torch
-torchvision
-torchaudio
+pytorch-tabnet
+xgboost
