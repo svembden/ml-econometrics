@@ -1,0 +1,67 @@
+---
+title: "Template"
+author: "Anna Grefhorst"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup}
+library(readr)
+```
+
+```{r cars}
+# Laden van de data. In train_data moet alleen train.csv zitten.
+train_data <- read.csv("/Users/whgrefhorst/Documents/Econometrie/Master/Machine Learning/train.csv")
+target<-train_data$target
+predictors<-train_data[,2:ncol(train_data)]
+```
+
+```{r pressure, echo=FALSE}
+#Split the training data into a training set and a validation set
+set.seed(123) # For reproducibility
+k= 10 # Number of folds (dit kan je aanpassen!)
+n= nrow(train_data) #total amount of data
+
+fraction_test=0.2
+fraction_training=0.8
+rows_to_keep <- floor(fraction_training*nrow(train_data))
+train_data<-train_data[(1:rows_to_keep),]
+
+n=rows_to_keep
+
+# Split into 10 equal parts
+shuffled_indices <- sample(1:n)
+split_size <- floor(n / 10)
+last_split_size<- n - 9*split_size
+split_data <- split(train_data[shuffled_indices, ], 
+                    ceiling(seq_along(shuffled_indices) / split_size))
+length(split_data)
+
+# Check if there are more than k splits, if yes combine the last two 
+if (length(split_data) > k) {
+  # Combine the 10th and 11th parts
+  split_data[[k]] <- rbind(split_data[[k]], split_data[[k+1]])
+  
+  # Remove the 11th part
+  split_data <- split_data[-(k+1)]
+}
+
+i=1
+for (i in 1:k){
+  print(paste0("fold: ",i,"/",k))
+  # Create a training and validation set
+  validation_indices <- split_data[[i]]
+  train_indices <- split_data[-i]
+  
+  # Makes it easier to use the training data afterwards, the validation data is already a data frame
+  train_indices <- do.call(rbind, train_indices)
+  
+  print(nrow(validation_indices))
+  print(nrow(train_indices))
+  #Doe hier wat je wil
+
+}
+#Hier heb je dan nog de test set, die is 0.2*
+print("finished")
+```
+
