@@ -18,4 +18,4 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 You can replace cu118 with the appropriate CUDA version for your system (e.g., cu117, cu116). If CUDA is not available, PyTorch will fall back to the CPU version.
 
 ## Usage
-For the final submission of the assignment, only the XGBOOST model (part 4) is used. The code can be run to train a new model, or a saved model can be loaded.
+For the final submission of the assignment, only the XGBOOST model (part 4) in ```main.ipynb``` is used. The code can be run to train a new model, or a saved model can be loaded.
